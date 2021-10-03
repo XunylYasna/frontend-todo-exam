@@ -23,6 +23,10 @@ class ApiFullstack extends IAPI {
 
         return resp.data.data;
     }
+
+    async editTodo(): Promise<Todo>{
+        return {} as Todo;
+    }
 }
 
 

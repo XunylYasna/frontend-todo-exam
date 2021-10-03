@@ -1,0 +1,41 @@
+.layout {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 799px) {
+  .layout-title {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: block;
+  }
+
+  .layout-title > h1 {
+    font-size: 2rem;
+  }
+
+  /* .layout-title > h1 {
+    font-size: 4rem;
+    margin-top: -10rem;
+    background: red;
+  } */
+}
+
+@media only screen and (min-width: 800px) {
+  .layout-title {
+    position: absolute;
+    left: -10vh;
+    bottom: 10vh;
+    display: block;
+    transform: rotate(270deg);
+  }
+
+  .layout-title > h1 {
+    font-size: 10vh;
+  }
+}
